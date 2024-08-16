@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, .purple-footer, .footer2, .footer-lists, .footer-icons{
+    display: flex;
+    align-items: center;
+}
+.cards, header, footer{
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    justify-content: space-between;
+    padding: 20px 130px 20px 80px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 60px
+}
+.elon,.sign {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+ul {
+    list-style: none;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.headings {
+    padding: 10px;
+    color: #342D71;
+}
+.elonMusk{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.elonMusk div{
+    display: flex;
+    gap: 10px;
+}
+header button {
+    background-color: #5920BC;
+    color: #fff;
+    padding: 15px 30px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.purple {
+    display: flex;
+    align-items: end;
+    background-color: #EAE6FF;
+    height: 270px;
+    padding: 20px 130px;
+}
+.purple-text {
+    font-size: 30px;
+    color: #222;
+    font-weight: 600;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    margin: 20px 0;
+}
+.checkboxes{
+    margin: 10px 0;
+}
+.checkboxes div{
+    margin: 20px 0;
+}
+select {
+    margin: 20px 0;
+    padding: 15px 30px;
+    outline: none;
+    font-size: 16px;
+}
+.text{
+    width: 400px;
+    color: #999999;
+    margin: 30px 0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 446px);
+    gap: 20px;
+    margin: 40px 0;  
+}
+.card {
+    padding: 20px;
+    border: 1px solid rgba(199, 201, 203, 0.5);
+}
+.card-header,.card-footer{
+    display: flex;
+    align-items: center;
+}
+.card-header{
+    gap: 20px;
+}
+.card-header img{
+    width: 56px;
+    border-radius: 50%;
+}
+.card-footer{
+    justify-content: space-between;
+}
+.ratingStar{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.point{
+    color: #FFC107;
+}
+.view{
+    color: #5920BC;
+    text-decoration: none;
+}
+.price-dollar{
+    background-color: rgba(89, 32, 188, 0.03);
+    color: #5920BC;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 11px 18px;
+}
+.pro-flex{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: 20px 0;
+}
+.pro-flex div{
+    display: flex;
+    gap: 10px;
+}
+.pro-flex div:last-child img{
+    width: 20px;
+}
+.book-now{
+    outline: none;
+    border: 1px solid #5920BC;
+    border-radius: 6px;
+    color: #5920BC;
+    background-color: #fff;
+    padding: 13px 24px;
+    font-size: 14px;
+}
+.purple-footer {
+    padding: 20px 0;
+    background-color: #F5F3FF;
+    justify-content: space-around;
+}
+.info-footer {
+    margin: 15px 0;
+    color: #222;
+}
+.info-footer>img {
+    margin-right: 15px;
+}
+.f-card {
+    padding: 40px;
+    width: 390px;
+    background-color: #FCFBFE;
+    border-radius: 6px;
+}
+.footer-lists {
+    width: 770px;
+    justify-content: space-around;
+}
+.footer-lists ul li {
+    margin: 20px 0;
+    color: #222;
+}
+.bold {
+    font-weight: 600;
+}
+.terms-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer2, .footer-bottom {
+    justify-content: space-around;
+    display: flex;
+    margin: 30px auto;
+}
+.menuicon {
+    display: none;
+    margin: 10px 0;
+}
+.menu-list li{
+    background-color: #faf8fd;
+    margin: 5px 0;
+}
+@media screen and (max-width: 1200px) and (min-width : 500px){
+    .cards {
+        grid-template-columns: repeat(1, 446px); 
+    }
+}
+@media screen and (max-width: 1042px){
+    .icon,.sign,.menuicon ul{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+    }
+}
+@media screen and (max-width: 800px){
+    main, .purple-footer,.footer-lists,.footer2, .footer-bottom{
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-cont{
+        width: 230px;
+    }
+    .footer-lists {
+        width: 270px;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 346px);
+    }
+    .card{
+        height: inherit;;
+    }
+    .pro-flex{
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+    .text{
+        width: inherit;
+    }
+}
+@media screen and (max-width: 800px) and (min-width : 500px){
+    .terms-list {
+        margin: 31px auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .terms-list {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px){
+    .cards {
+        grid-template-columns: repeat(1, 250px);
+    }
+    .card-footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .f-card {
+        width: 320px;
+    }
+}
